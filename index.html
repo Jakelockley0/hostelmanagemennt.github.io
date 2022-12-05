@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HOSTEL MANAGEMENT SYSTEM </title>
+    <link rel="stylesheet" href="https://unpkg.com/swiper@7/swiper-bundle.min.css" />
+    <script src="https://kit.fontawesome.com/2dccb123fe.js" crossorigin="anonymous"></script>
+    <!-- font awesome cdn link  -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <!-- custom css file link  -->
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <!-- header section starts  -->
+    <header class="header ">
+        <a href="#" class="logo"> <img src="image/logo.png" alt=""> </a>
+        <nav class="navbar">
+            <a href="#" id="collegename">GANDHI FAIZ-E-AAM P.G. COLLEGE SHAHJAHANPUR</a>
+            <div id="btns">
+                <a id="home-btn" href="#home" onclick="window.location.reload()">Home</a>
+                <a id="about-btn" href="about.html">About Us</a>
+                <a href="Facilities.html" id="F-btn">Facilities</a>
+                <a href="gallery.html" id="Gallery-btn">Gallery</a>
+                <a href="rooms.html" id="Room-btn">Rooms Allocation</a>
+                <a id="login-btn" onclick="openForm()">login/Registration</a>
+                <!-- </div> -->
+                <!-- <iframe src="about.html" height="50%" width="50%" frameborder="0" name="iframe"></iframe -->
+        </nav>
+        <div onclick="openMenu()" ondblclick="closeMenu()" class="icons">
+            <a href="#"> <i class="fa-solid fa-bars hl"></i></a>
+        </div>
+    </header>
+    <!-- header section ends -->
+    <!-- form section starts -->
+    <section class="form" id="form">
+        <form action="" class="reg-form" id="reg-page">
+            <h3>Student Registration</h3>
+            <i class="fa-regular fa-circle-xmark close-btn" onclick="closeSignup()"></i>
+            <input type="text" placeholder="Enter Your First Name" class="box">
+            <input type="text" placeholder="Enter Your Last Name" class="box">
+            <input type="email" placeholder="Enter Your Email" class="box">
+            <input type="password" placeholder="Enter an strong Password" class="box">
+            <input type="password" placeholder="Confirm Your Password" class="box">
+            <button>Register Now</button>
+        </form>
+        <form action="" class="login-form" id="login-page">
+            <h3>Student Login</h3>
+            <i class="fa-regular fa-circle-xmark close-btn" onclick="closeForm()"></i>
+            <input type="email" placeholder="Your Email or Username" class="box">
+            <input type="password" placeholder="Enter your password" class="box">
+            <p>forget your password <a href="#">click here</a></p>
+            <p>New Student Registration <a id="Registration-btn" onclick="closeForm();openReg()">create now</a></p>
+            <button>Login Now</button>
+        </form>
+    </section>
+    <!-- menu section starts here -->
+    <section class="menu" id="menu">
+        <div class="menu-links">
+            <a class="home-btn links" href="#home" onclick="window.location.reload()"><i
+                    class="fa-solid fa-house"></i><span>Home</span></a> <br>
+            <a href="about.html" class="links"><i class="fa-solid fa-user"></i><span>About Us</span></a> <br>
+            <a href="Facilities.html" class="links"><i class="fa-solid fa-hotel"></i><span>Facilities</span> </a> <br>
+            <a href="gallery.html" class="links"><i class="fa-solid fa-image"></i><span>Gallery</span></a> <br>
+            <a href="rooms.html" class="links"><i class="fa-solid fa-indian-rupee-sign"></i><Span>Room Allocation</Span>
+            </a> <br>
+            <a class="links" onclick="openForm()"><i
+                    class="fa-solid fa-right-to-bracket"></i><span>Login/Registration</span></a>
+        </div>
+    </section>
+    <!-- form section ends -->
+    <!-- home section starts  -->
+    <section class="home" id="home">
+        <div class="content">
+            <h3>HOSTEL <span>MANAGEMENT</span> SYSTEM</h3>
+        </div>
+    </section>
+    <!-- home section ends -->
+    <section class="footer">
+        <div class="box-container">
+            <div class="box social-media">
+                <h3> Our Social Media Handels </h3>
+                <p>Follow our Social Media Handels .</p>
+                <i class="fa-brands fa-facebook"></i>
+                <i class="fa-brands fa-twitter"></i>
+                <i class="fa-brands fa-instagram"></i>
+                <i class="fa-brands fa-linkedin"></i>
+                <div class="share">
+                </div>
+            </div>
+            <div class="box contacts">
+                <h3>contact info</h3>
+                <a href="#" class="f-links"> +918922994770 </a>
+                <a href="#" class="f-links"> Karandeepsingh71285@gmail.com </a>
+                <a href="#" class="f-links"> Tilhar, india - 242307 </a>
+            </div>
+            <div class="box newsletter">
+                <h3>newsletter</h3>
+                <p>subscribe for latest updates</p>
+                <input type="email" placeholder="your email" class="email">
+                <input type="submit" value="subscribe" class="s-btn">
+                <img src="image/payment.png" class="payment-img" alt="">
+            </div>
+        </div>
+        <div id="credit">
+            <h1>All Rights reserved | Designed & Developed By Karan Deep Singh</h1>
+        </div>
+    </section>
+    <!-- custom js file link  -->
+    <script src="js/myscript.js"></script>
+</body>
+
+</html>

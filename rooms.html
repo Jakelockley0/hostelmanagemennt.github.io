@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Room Allocation</title>
+    <script src="https://kit.fontawesome.com/2dccb123fe.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Rajdhani:wght@300&family=Roboto&family=Mukta&family=Tinos&family=Signika&family=Unlock&display=swap');
+        :root {
+            --orange: #ff7800;
+            --black: #130f40;
+            --light-color: #666;
+            --box-shadow: 0 .5rem 1.5rem rgba(0, 0, 0, .1);
+            --border: .2rem solid rgba(0, 0, 0, .1);
+            --outline: .1rem solid rgba(0, 0, 0, .1);
+            --outline-hover: .2rem solid var(--black);
+        }
+        * {
+            font-family: 'Poppins', sans-serif;
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            outline: none;
+            border: none;
+            text-decoration: none;
+            text-transform: capitalize;
+            transition: all .2s linear;
+        }
+        html {
+            font-size: 62.5%;
+            /* overflow-x: hidden; */
+            scroll-behavior: smooth;
+            scroll-padding-top: 7rem;
+        }
+        */ body {
+            background: #eee;
+        }
+        section {
+            padding: 2rem 9%;
+        }
+        .header {
+            position: fixed;
+            top: 0;
+            left: 0;
+            right: 0;
+            z-index: 1000;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 2rem 9%;
+            background: #fff;
+            box-shadow: var(--box-shadow);
+            height: 12rem;
+        }
+        .header .logo img {
+            width: 10rem;
+            position: absolute;
+            left: 4rem;
+            top: 1rem;
+            right: 0;
+            display: inline;
+            float: left;
+        }
+        #collegename {
+            font-size: 4rem;
+            height: 1rem;
+            color: forestgreen;
+            font-family: 'Unlock';
+            position: relative;
+            left: 0rem;
+            cursor: auto;
+        }
+        .header .navbar a:hover {
+            color: #ff7800;
+        }
+        .icons a {
+            font-size: 3rem;
+            color: forestgreen;
+            position: relative;
+            top: 1rem;
+            left: -9rem;
+            cursor: pointer;
+        }
+        .icons a:hover {
+            text-decoration: underline;
+        }
+        .icons span {
+            margin-left: .4rem;
+            font-size: 2rem;
+        }
+        .rooms {
+            position: absolute;
+            top: 15rem;
+        }
+        .rooms h1 {
+            color: forestgreen;
+            position: relative;
+            left: 27rem;
+            font-size: 3rem;
+            font-family: 'Signika';
+            margin: 2rem 0 5rem 0;
+            text-align: center;
+            width: 60rem;
+        }
+        .rooms span {
+            background-color: forestgreen;
+            padding: .9rem;
+            color: white;
+            clip-path: polygon(100% 0, 93% 50%, 100% 99%, 0% 100%, 7% 50%, 0% 0%);
+        }
+        .rooms span:hover{
+            background-color: var(--orange);
+        }
+        .rooms p {
+            color: rgb(10, 9, 9);
+            font-size: 2rem;
+            letter-spacing: .2rem;
+            margin-bottom: 1rem;
+            font-family: 'Mukta';
+        }
+        .fees{
+            border: .2rem solid forestgreen;
+         padding: 2rem;   margin: 2rem 1rem 2rem 1rem ;
+         width: 90rem;
+         position: relative;
+         left: -18rem;
+        }
+        .fees:hover{
+            border: .2rem solid var(--orange);
+            box-shadow: .5rem .5rem 5rem  rgba(0, 0, 0, 0.575);;
+        }
+        .fees th{
+            font-family: 'Mukta';
+        }
+        .fees th:hover{
+            color: var(--orange);
+        }
+        .fees td{
+            font-size: 2.2rem;
+            color: black;
+            text-align: left;
+            margin: 4rem 0 4rem 0;
+            font-family: 'Mukta';
+        }
+        .inr {
+            padding: 1rem 0 1rem 13rem;
+        }
+    </style>
+</head>
+<body>
+    <header id="header" class="header">
+        <a href="#" class="logo"> <img src="image/logo.png" alt=""> </a>
+        <nav class="navbar">
+            <a href="#" id="collegename">GANDHI FAIZ-E-AAM P.G. COLLEGE SHAHJAHANPUR</a>
+            <div class="icons">
+                <a id="home-btn" href="Home.html"><i class="fa-solid fa-house"></i><span>Home</span></a>
+            </div>
+        </nav>
+    </header>
+    <section class="rooms" id="rooms">
+        <h1>
+            Room <span>Allocation </span>
+        </h1>
+        <p>An air conditioned common mess that has two floors, one for boys and one for girls. All hostels rooms
+            are provided with the best facilities such as geysers in bathrooms, European and Indian W.C.s,
+            telephone facility and water coolers. Rooms are equipped with beds and mattresses, study tables
+            and chairs. Each room has its own balcony. There are single as well as double-seated rooms. All
+            hostels have guest rooms, where parents and guardians can come and meet their wards. There is a
+            separate room where any sick student may be shifted to for isolation and better care. All
+            hostels have common rooms with television sets. Separate badminton, basket ball and volley ball
+            Courts, table tennis, gym facility and indoor games like carom and card board games are also
+            provided. We also have the facility of A.C. Rooms in the hostel.</p>
+        <h1>
+            Hostel <span>Fees</span>
+            <table class="fees">
+                <tr>
+<th>Type of Occupancy</th>
+<th>Annual Fee in INR</th>
+                </tr>
+                <tr><td>Single (Non AC room)
+                </td>
+                <td class="inr">80000</td></tr>
+                <tr><td>Double (Non AC room)</td>
+                <td class="inr">60000</td></tr>
+                <tr><td>Single (AC room)</td>
+                <td class="inr">1,25000</td></tr>
+                <tr><td>Double (AC room)</td>
+                <td class="inr">100000</td></tr>
+                <tr><td>Triple/Quadruple (NON A/C Room)</td>
+                <td class="inr">50000</td></tr>
+            </table>
+        </h1>
+    </section>
+</body>
+</html>

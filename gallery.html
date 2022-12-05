@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gallery</title>
+    <script src="https://kit.fontawesome.com/2dccb123fe.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Rajdhani:wght@300&family=Roboto&family=Mukta&family=Tinos&family=Signika&family=Unlock&display=swap');
+
+        :root {
+            --orange: #ff7800;
+            --black: #130f40;
+            --light-color: #666;
+            --box-shadow: 0 .5rem 1.5rem rgba(0, 0, 0, .1);
+            --border: .2rem solid rgba(0, 0, 0, .1);
+            --outline: .1rem solid rgba(0, 0, 0, .1);
+            --outline-hover: .2rem solid var(--black);
+        }
+
+        * {
+            font-family: 'Poppins', sans-serif;
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            outline: none;
+            border: none;
+            text-decoration: none;
+            text-transform: capitalize;
+            transition: all .2s linear;
+        }
+
+        html {
+            font-size: 62.5%;
+            overflow-x: hidden;
+            scroll-behavior: smooth;
+            scroll-padding-top: 7rem;
+        }
+
+        */ body {
+            background: #eee;
+        }
+
+        section {
+            padding: 2rem 9%;
+        }
+
+        .header {
+            position: fixed;
+            top: 0;
+            left: 0;
+            right: 0;
+            z-index: 1000;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 2rem 9%;
+            background: #fff;
+            box-shadow: var(--box-shadow);
+            height: 12rem;
+        }
+
+        .header .logo img {
+            width: 10rem;
+            position: absolute;
+            left: 4rem;
+            top: 1rem;
+            right: 0;
+            display: inline;
+            float: left;
+        }
+
+        #collegename {
+            font-size: 4rem;
+            height: 1rem;
+            color: forestgreen;
+            font-family: 'Unlock';
+            position: relative;
+            left: 0rem;
+            cursor: auto;
+        }
+
+        .header .navbar a:hover {
+            color: #ff7800;
+        }
+
+        .icons a {
+            font-size: 3rem;
+            color: forestgreen;
+            position: relative;
+            top: 1rem;
+            left: -9rem;
+            cursor: pointer;
+        }
+
+        .icons a:hover {
+            text-decoration: underline;
+        }
+
+        .icons span {
+            margin-left: .4rem;
+            font-size: 2rem;
+        }
+
+        .gallery {
+            position: absolute;
+            top: 15rem;
+            left: 9rem;
+            right: 3rem;
+        }
+
+        .gallery h2 {
+            color: forestgreen;
+            position: relative;
+            left: 15rem;
+            font-size: 3rem;
+            font-family: 'Signika';
+            margin: 2rem 0 5rem 0;
+            text-align: center;
+            width: 60rem;
+        }
+
+        .gallery span {
+            background-color: forestgreen;
+            padding: .9rem;
+            color: white;
+            clip-path: polygon(100% 0, 93% 50%, 100% 99%, 0% 100%, 7% 50%, 0% 0%);
+        }
+
+        .gallery span:hover {
+            background-color: var(--orange);
+        }
+
+        .photos {
+            float: left;
+            width: 50%;
+        }
+
+        .photos img {
+            height: 32rem;
+            width: 42rem;
+            margin: 3rem 2rem 3rem 2rem;
+            border: .3rem solid rgba(34, 139, 34, 0.733);
+        }
+
+        .photos img:hover {
+            border: .3rem solid var(--orange);
+            box-shadow: .2rem .2rem 5rem rgba(0, 0, 0, 0.575);
+        }
+
+        .text h1 {
+            font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+            font-size: 2rem;
+            color: forestgreen;
+            padding: 1.5rem .4rem 1.5rem .4rem;
+            background-color: white;
+            border: .2rem solid rgba(34, 139, 34, 0.699);
+            border-radius: 2rem;
+            margin: 0 2rem 0 2rem;
+            text-align: center;
+            position: relative;
+            left: -2rem;
+        }
+
+        .text h1:hover {
+            border: .2rem solid rgba(248, 96, 7, 0.699);
+            border-radius: 2rem;
+        }
+    </style>
+</head>
+
+<body>
+    <header id="header" class="header">
+        <a href="#" class="logo"> <img src="image/logo.png" alt=""> </a>
+        <nav class="navbar">
+            <a href="#" id="collegename">GANDHI FAIZ-E-AAM P.G. COLLEGE SHAHJAHANPUR</a>
+            <div class="icons">
+                <a id="home-btn" href="Home.html"><i class="fa-solid fa-house"></i><span>Home</span></a>
+            </div>
+        </nav>
+    </header>
+    <section class="gallery" id="gallery">
+        <h2>College events & <span>Gallery</span></h2>
+        <div class="photos"><img src="/img/img (1).jpg" alt="">
+            <div class="text">
+                <h1>College Premises</h1>
+            </div>
+        </div>
+        <div class="photos"><img src="/img/img (2).png" alt="">
+            <div class="text">
+                <h1>Tree Planting in college by NCC Students</h1>
+            </div>
+        </div>
+        <div class="photos"><img src="/img/img (3).jpg" alt="">
+            <div class="text">
+                <h1>A view of Roads in College</h1>
+            </div>
+        </div>
+        <div class="photos"><img src="/img/img (4).jpg" alt="">
+            <div class="text">
+                <h1>Drone view of College Premises</h1>
+            </div>
+        </div>
+        <div class="photos"><img src="/img/img (5).jpg" alt="">
+            <div class="text">
+                <h1>Drone view of College Premises</h1>
+            </div>
+        </div>
+        <div class="photos"><img src="/img/img (6).jpg" alt="">
+            <div class="text">
+                <h1>NCC Students</h1>
+            </div>
+        </div>
+        <div class="photos"><img src="/img/img (7).png" alt="">
+            <div class="text">
+                <h1>College Adminstrative Block</h1>
+            </div>
+        </div>
+        <div class="photos"><img src="/img/img (8).jpg" alt="">
+            <div class="text">
+                <h1>College Garden</h1>
+            </div>
+        </div>
+        <div class="photos"><img src="/img/img(9).jpg" alt="">
+            <div class="text">
+                <h1 style="font-size:1.5rem ;padding:1rem 1rem .5rem 1rem">Seminar Organized on the birth anniversery of
+                    Subash Chandra Bose</h1>
+            </div>
+        </div>
+        <div class="photos"><img src="/img/img(10).jpg" alt="">
+            <div class="text">
+                <h1 style="font-size: 1.5rem">One day special camp of National Service Scheme(NSS) inaugurated</h1>
+            </div>
+        </div>
+        <div class="photos"><img src="/img/img(11).jpg" alt="">
+            <div class="text">
+                <h1 style="font-size: 1.5rem; padding:1rem 1rem .5rem 1rem">A national seminar was organized on the
+                    topic '20th Century Indian Literature and National
+                    Movement'.</h1>
+            </div>
+        </div>
+        <div class="photos"><img src="/img/img(12).jpg" alt="">
+            <div class="text">
+                <h1 style="font-size: 1.5rem; padding:1rem 1rem .5rem 1rem">The grand opening of the two-day National
+                    Conference on “Recent Developments in Neoscience and Green
+                    Chemistry” took place.</h1>
+            </div>
+        </div>
+        <div class="photos"><img src="/img/img(13).jpg" alt="">
+            <div class="text">
+                <h1 style="font-size: 1.5rem; padding:1rem 1rem .5rem 1rem">Inauguration of New Computer lab by
+                    Honorable Cabinet Minister Mr Suresh Khanna</h1>
+            </div>
+        </div>
+        <div class="photos"><img src="/img/img(14).jpg" alt="">
+            <div class="text">
+                <h1>Exhibition of Modern weapons used by Indian Army </h1>
+            </div>
+        </div>
+    </section>
+</body>
+
+</html>

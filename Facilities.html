@@ -1,0 +1,336 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Facilities</title>
+    <script src="https://kit.fontawesome.com/2dccb123fe.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Rajdhani:wght@300&family=Roboto&family=Mukta&family=Tinos&family=Signika&family=Unlock&display=swap');
+        :root {
+            --orange: #ff7800;
+            --black: #130f40;
+            --light-color: #666;
+            --box-shadow: 0 .5rem 1.5rem rgba(0, 0, 0, .1);
+            --border: .2rem solid rgba(0, 0, 0, .1);
+            --outline: .1rem solid rgba(0, 0, 0, .1);
+            --outline-hover: .2rem solid var(--black);
+        }
+        * {
+            font-family: 'Poppins', sans-serif;
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            outline: none;
+            border: none;
+            text-decoration: none;
+            text-transform: capitalize;
+            transition: all .2s linear;
+        }
+        html {
+            font-size: 62.5%;
+            overflow-x: hidden;
+            scroll-behavior: smooth;
+            scroll-padding-top: 7rem;
+        }
+        */ body {
+            background: #eee;
+        }
+        section {
+            padding: 2rem 9%;
+        }
+        .header {
+            position: fixed;
+            top: 0;
+            left: 0;
+            right: 0;
+            z-index: 1000;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 2rem 9%;
+            background: #fff;
+            box-shadow: var(--box-shadow);
+            height: 12rem;
+        }
+        .header .logo img {
+            width: 10rem;
+            position: absolute;
+            left: 4rem;
+            top: 1rem;
+            right: 0;
+            display: inline;
+            float: left;
+        }
+        #collegename {
+            font-size: 4rem;
+            height: 1rem;
+            color: forestgreen;
+            font-family: 'Unlock';
+            position: relative;
+            left: 0rem;
+            cursor: auto;
+        }
+        .header .navbar a:hover {
+            color: #ff7800;
+        }
+        .icons a {
+            font-size: 3rem;
+            color: forestgreen;
+            position: relative;
+            top: 1rem;
+            left: -9rem;
+            cursor: pointer;
+        }
+        .icons a:hover {
+            text-decoration: underline;
+        }
+        .icons span {
+            margin-left: .4rem;
+            font-size: 2rem;
+        }
+        .facilities {
+            position: absolute;
+            top: 15rem;
+            left: -6rem;
+        }
+        .facilities h1 {
+            color: forestgreen;
+            position: relative;
+            left: 27rem;
+            font-size: 3rem;
+            font-family: 'Signika';
+            margin: 2rem 0 5rem 0;
+            text-align: center;
+            width: 60rem;
+        }
+        .facilities .span {
+            background-color: forestgreen;
+            padding: .9rem;
+            color: white;
+            clip-path: polygon(100% 0, 93% 50%, 100% 99%, 0% 100%, 7% 50%, 0% 0%);
+        }
+        .facilities p {
+            color: rgb(10, 9, 9);
+            font-size: 2rem;
+            letter-spacing: .2rem;
+            margin-bottom: 1rem;
+            font-family: 'Mukta';
+        }
+        .slideshow-container {
+            margin: 1rem 2rem 3rem 3rem;
+            position: relative;
+            left: 2.5rem;
+            padding: 2rem;
+            box-shadow: 1rem 1rem 5rem forestgreen;
+        }
+        .mySlide {
+            display: none;
+        }
+        /* next prev buttons */
+        .prev,
+        .next {
+            cursor: pointer;
+            position: absolute;
+            top: 50%;
+            width: auto;
+            margin-top: -22px;
+            padding: 16px;
+            color: forestgreen;
+            font-weight: bold;
+            font-size: 18px;
+            transition: 0.6s ease;
+            border-radius: 0 3px 3px 0;
+            user-select: none;
+        }
+        .next {
+            right: 1rem;
+            border-radius: 3px 0 0 3px;
+        }
+        /* On hover, add a black background color with a little bit see-through */
+        .prev:hover,
+        .next:hover {
+            background-color: rgba(255, 255, 255, 0.664);
+            color: var(--orange);
+        }
+        /* The dots/bullets/indicators */
+        .dot {
+            cursor: pointer;
+            height: 15px;
+            width: 15px;
+            margin: 0 2px;
+            background-color: #bbb;
+            border-radius: 50%;
+            display: inline-block;
+            transition: background-color 0.6s ease;
+        }
+        .active,
+        .dot:hover {
+            background-color: #717171;
+        }
+        /* Fading animation */
+        .fade {
+            animation-name: fade;
+            animation-duration: 1.5s;
+        }
+        @keyframes fade {
+            from {
+                opacity: .4
+            }
+            to {
+                opacity: 1
+            }
+        }
+        .slideshow-container img {
+            height: 60rem;
+            width: 100%;
+        }
+    </style>
+</head>
+<body>
+    <header id="header" class="header">
+        <a href="#" class="logo"> <img src="image/logo.png" alt=""> </a>
+        <nav class="navbar">
+            <a href="#" id="collegename">GANDHI FAIZ-E-AAM P.G. COLLEGE SHAHJAHANPUR</a>
+            <div class="icons">
+                <a id="home-btn" href="Home.html"><i class="fa-solid fa-house"></i><span>Home</span></a>
+            </div>
+        </nav>
+    </header>
+    <section class="facilities" id="facilties">
+        <div class="slideshow-container">
+            <div class="mySlide fade">
+                <img src="/image/f (1).jpg" alt="">
+            </div>
+            <div class="mySlide fade">
+                <img src="/image/f (2).jpg" alt="">
+            </div>
+            <div class="mySlide fade">
+                <img src="/image/f (3).jpg" alt="">
+            </div>
+            <div class="mySlide fade">
+                <img src="/image/f (4).jpg" alt="">
+            </div>
+            <div class="mySlide fade">
+                <img src="/image/f (5).jpg" alt="">
+            </div>
+            <div class="mySlide fade">
+                <img src="image/f (6).jpg" alt="">
+            </div>
+            <div class="mySlide fade">
+                <img src="image/f (7).jpg" alt="">
+            </div>
+            <div class="mySlide fade">
+                <img src="image/f (8).jpg" alt="">
+            </div>
+            <div class="mySlide fade">
+                <img src="image/f (9).jpg" alt="">
+            </div>
+            <div class="mySlide fade">
+                <img src="image/f (11).png" alt="">
+            </div>
+            <div class="mySlide fade">
+                <img src="image/f(12).jpeg" alt="">
+            </div>
+            <div class="mySlide fade">
+                <img src="image/f(13).jpg" alt="">
+            </div>
+            <div class="mySlide fade">
+                <img src="image/f(14).jpg" alt="">
+            </div>
+            <!-- Next and previous buttons -->
+            <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+            <a class="next" onclick="plusSlides(1)">&#10095;</a>
+        </div>
+        <br>
+        <!-- The dots/circles -->
+        <div style="text-align:center">
+            <span class="dot" onclick="currentSlide(1)"></span>
+            <span class="dot" onclick="currentSlide(2)"></span>
+            <span class="dot" onclick="currentSlide(3)"></span>
+        </div>
+        <div class="content">
+            <h1>Hostel <span class="span">Facilities</span> </h1>
+            <p>The institute provides magnificent residential facilities offering a comprehensive range of
+                facilities within the institute, separately for boys and girls. We understand that most of our
+                students are moving away from home for the first time, so we strive to make the transition as
+                smooth as possible by providing comfortable, safe and homely set-up within the campus. All the
+                rooms have been designed to provide adequate moving space and ample air and light.</p>
+            <p>To make the stay of the students a pleasant one they are constantly involved by organizing
+                various celebrations, events and activities likes cultural activities, sports, debates and
+                declamations.
+                Various competitions are organized where students from different residential inns compete with
+                each other. Apart from this, various clubs and forums work inside the residential facilities
+                providing the students opportunities to develop certain skills in their fields of interest and
+                inculcating in them a sense of regular practice and discipline.</p>
+            <h1>Counselling</h1>
+            <p>In addition, the residential facilities also have counsellors who are there to solve the problems
+                of students in context of family issues, studies, home sickness etc. These counsellors are
+                regarded as best friends by the students who provide ready tips on how to tackle these everyday
+                stressful situations. Also for counseling and psychological support, the institute offers on
+                campus Counselling and Psychological Support Services.</p>
+            <h1>Committees</h1>
+            <p>There are various Committees working in the Residential facilities each looking at separate and
+                individual issues. The Committees smoothen the functioning as well as ensure active
+                participation of the students as the authority is delegated to them through the committees.
+                Following are the committees that are functional in the residential facilities:</p>
+            <p>
+                • Cultural and Entertainment Committee <br>
+                • Sports Committee <br>
+                • Discipline, Security and Anti Ragging Committee <br>
+                • Medical and Safety Committee <br>
+                • Mess Committee <br>
+                • Academics and Grievance Committee</p>
+            <h1>Food <span class="span">Facility</span> </h1>
+            <p>1. Ultra modern Mess to cater to students' needs. <br>
+                2. Nutritions, hygienic and delicious vegetarian and non-vegetarian food provided. <br>
+                3. A lot of variety in the Menu. <br>
+                4. Nutritions Menu is well appreciated by the hostel inmates.</p>
+            <h1>Stay <span class="span">Category</span> </h1>
+            <p> • Equipped with state of the art facilities. <br>
+                • Which includes reading room stocked with dailies and magazines. <br>
+                • Secure and impeccably maintained environment. <br>
+                • Both Men's and Women's hostels have good recreational and communication facilities. </p>
+            <h1>Safety & <span class="span">Security</span></h1>
+            <p>The institute ensures the safety and security of the students in the hostels through a dedicated
+                team of security officers and personnel who work for the same. There are security guards who
+                take care that proper decorum is maintained in the campus and are there to assist the students
+                in case of any emergency Conditions of availing Residential Facility. <br>
+                • The student should not paste any poster or painting on the walls of rooms or at other places
+                in and outside residential premises. <br>
+                • The entrance of outsiders in the residential accommodation will be restricted and entry and/or
+                stay of parents/guardian or any other visitor (if authorized)will be subject to the permission
+                of warden and other concerned authorities of the College <br>
+                • Students having complaints regarding mess should report to the Warden, Principal and A/O. But
+                they are not allowed to indulge in accumulating the mess or strike. <br>
+                • All Hostel gates will be closed at 9.00 a.m. and opened at 4.15 p.m. during the college days.
+                In between, students are not allowed to enter the hostel. All hostel gates will be closed at
+                8.30 p.m. daily. <br>
+                • Students themselves are responsible for the cleanliness of their rooms/apartments. However the
+                washrooms and corridors will be cleaned by the housekeeping staff on periodical basis. <br>
+                • Student should be present in their respective rooms when the attendance is taken during study
+                hours. Absentees will be fined. <br>
+                • Students are not to damage any property inside the residential premises. <br>
+                • Students with genuine reason are allowed to go out even after 7p.m. to 8 p.m. with the
+                warden's permission. </p>
+        </div>
+    </section>
+    <script>
+        let slideIndex = 0;
+        showSlides();
+        function showSlides() {
+            let i;
+            let slides = document.getElementsByClassName("mySlide");
+            for (i = 0; i < slides.length; i++) {
+                slides[i].style.display = "none";
+            }
+            slideIndex++;
+            if (slideIndex > slides.length) { slideIndex = 1 }
+            slides[slideIndex - 1].style.display = "block";
+            setTimeout(showSlides, 2000); // Change image every 2 seconds
+        }
+    </script>
+</body>
+</html>
