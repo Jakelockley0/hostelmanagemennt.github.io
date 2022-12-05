@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Us</title>
+    <script src="https://kit.fontawesome.com/2dccb123fe.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Rajdhani:wght@300&family=Roboto&family=Mukta&family=Tinos&family=Signika&family=Unlock&display=swap');
+
+        :root {
+            --orange: #ff7800;
+            --black: #130f40;
+            --light-color: #666;
+            --box-shadow: 0 .5rem 1.5rem rgba(0, 0, 0, .1);
+            --border: .2rem solid rgba(0, 0, 0, .1);
+            --outline: .1rem solid rgba(0, 0, 0, .1);
+            --outline-hover: .2rem solid var(--black);
+        }
+
+        * {
+            font-family: 'Poppins', sans-serif;
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            outline: none;
+            border: none;
+            text-decoration: none;
+            text-transform: capitalize;
+            transition: all .2s linear;
+        }
+
+        html {
+            font-size: 62.5%;
+            /* overflow-x: hidden; */
+            scroll-behavior: smooth;
+            scroll-padding-top: 7rem;
+        }
+
+        */ body {
+            background: #eee;
+        }
+
+        section {
+            padding: 2rem 9%;
+        }
+
+        .header {
+            position: fixed;
+            top: 0;
+            left: 0;
+            right: 0;
+            z-index: 1000;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 2rem 9%;
+            background: #fff;
+            box-shadow: var(--box-shadow);
+            height: 12rem;
+        }
+
+        .header .logo img {
+            width: 10rem;
+            position: absolute;
+            left: 4rem;
+            top: 1rem;
+            right: 0;
+            display: inline;
+            float: left;
+        }
+
+        #collegename {
+            font-size: 4rem;
+            height: 1rem;
+            color: forestgreen;
+            font-family: 'Unlock';
+            position: relative;
+            left: 0rem;
+            cursor: auto;
+        }
+
+        .header .navbar a:hover {
+            color: #ff7800;
+        }
+
+        .icons a {
+            font-size: 3rem;
+            color: forestgreen;
+            position: relative;
+            top: 1rem;
+            left: -9rem;
+            cursor: pointer;
+        }
+
+        .icons a:hover {
+            text-decoration: underline;
+        }
+
+        .icons span {
+            margin-left: .4rem;
+            font-size: 2rem;
+        }
+
+        .About {
+            position: absolute;
+            top: 15rem;
+        }
+
+        .About img {
+            height: 40rem;
+            width: 40rem;
+            position: relative;
+            left: 35rem;
+            margin: 2rem 0 5rem 0;
+            box-shadow: .2rem .2rem 3rem black;
+        }
+
+        .About h1 {
+            color: white;
+            position: relative;
+            left: 24rem;
+            font-size: 3rem;
+            font-family: 'Signika';
+            margin: 2rem 0 5rem 0;
+            text-align: center;
+            background-color: forestgreen;
+            clip-path: polygon(100% 0, 93% 50%, 100% 99%, 0% 100%, 7% 50%, 0% 0%);
+            width: 60rem;
+        }
+
+        .About p {
+            color: rgb(10, 9, 9);
+            font-size: 2rem;
+            letter-spacing: .2rem;
+            margin-bottom: 1rem;
+            font-family: 'Mukta';
+        }
+
+        .Features {
+            padding-left: 4rem;
+            padding-right: 4rem;
+            /* height: 50%; */
+        }
+
+        .Features .box {
+            border: .2rem ridge rgba(109, 90, 177, 0.548);
+            border-radius: .5rem;
+            float: left;
+            width: 31%;
+            margin: 1rem;
+            padding: 1rem;
+        }
+
+        .Features .box h2 {
+            font-size: 1.8rem;
+            font-family: 'Signika';
+            margin: 1rem 1rem 2rem 1rem;
+            background-color: #130f40;
+            color: white;
+            padding: 1.2rem;
+            border-radius: 2rem;
+        }
+
+        .Features .box p {
+            font-size: 1.9rem;
+            letter-spacing: .1em;
+            font-family: 'Mukta';
+        }
+    </style>
+</head>
+
+<body>
+    <header id="header" class="header">
+        <a href="#" class="logo"> <img src="image/logo.png" alt=""> </a>
+        <nav class="navbar">
+            <a href="#" id="collegename">GANDHI FAIZ-E-AAM P.G. COLLEGE SHAHJAHANPUR</a>
+            <div class="icons">
+                <a id="home-btn" href="Home.html"><i class="fa-solid fa-house"></i><span>Home</span></a>
+            </div>
+        </nav>
+    </header>
+    <section class="About" id="About">
+        <div class="content">
+            <h1>COLLEGE OVERVIEW</h1>
+            <p>Gandhi Faiz-E-Aam College, Shahjahanpur is a Multi-streamed College of India. This College was
+                established
+                in 1947 by Khan Bahadur Fazl-Ur-Rahman Khan. Generally it is known by its abbreviation G. F. College. It
+                is a Post graduate College and is affiliated to Mahatma Jyotiba Phule Rohilkhand University, Bareilly.
+                It was started with the object of imparting modern education to the students in a manner that conserve
+                their religion, language, script and culture. The college is owned and managed by "Muslim Educational
+                Society, Shahjahanpur", a charitable religious society.
+                This institution is situated in Shahjahanpur, a district of Uttar Pradesh in the Bareilly division. It
+                is equipped with laboratories, lecture rooms, central library, wooden badminton courts, auditorium,
+                cultural and heritage research centre and extensive playgrounds for football, basketball, hockey,
+                cricket with athletics, and a computer lab.</p>
+            <img src="/image/Hostel-Managemen-info.png" alt="">
+            <h1>ABOUT HOSTEL MANAGEMENT SYSTEM</h1>
+            <p>This System is based on HyperText Markup Language,CSS & Js. Hostel Management System is online web
+                application that is designed to manage all hostel activities like hostel
+                admissions, fees, room, mess allotment, hostel stores & generates related reports for smooth
+                transactions. It is also used to manage monthly mess bill calculation, hostel staff payroll, student
+                certificates, etc.
+            </p>
+            <p>Designed & developed keeping in mind all the hostel management concerns of staff, Our Hostel
+                Management Software is a one-stop-solution for higher education institutions. Right from students'
+                registration to allocating rooms & mess, managing student count records, and ins-and-outs of students,
+                it streamlines & automates all the day-to-day hostel activities.
+                Checking the rooms' availability, allocating room to new students, managing hostel fees, visitors'
+                records, mess, and all such hostel management related activities manually consume efforts, time, and
+                resources. Moreover, hostel management also requires looking after the security of students which can
+                only be achieved with close supervision of daily students' activities.</p>
+            <h1>What Are The Main Functions of Hostel Management System</h1>
+            <p>Is overseeing the dorms at your university becoming too much for you to handle? then select the
+                comprehensive hostel administration system created by us. No matter how large or small your school's
+                hostel operations are, our capable software will protect your vision. With the effective management
+                system, building details like a ward, the number of floors, rooms, and their capacity and amenities are
+                now just a few clicks away. Integrate student information with hostel infrastructure information to
+                ensure efficient hostilities management. The processes for assigning rooms and moving rooms will be
+                frictionless as a result.</p>
+            <h1>Features Of Hostel Management System</h1>
+            <div class="Features">
+                <div class="box">
+                    <h2>1 | Automatic Room Allocation</h2>
+                    <p>The wardens can verify room availability and assign rooms based on the requested category by the
+                        students
+                        using the management systems. Along with producing detailed reports, it also generates gate
+                        passes for
+                        guests who check out at particular times.</p>
+                </div>
+                <div class="box">
+                    <h2>2 | Student Fees Collection</h2>
+                    <p> With the hostel management solution, the time-consuming chore of calculating hostel fees and
+                        collecting
+                        them
+                        becomes simpler and faster. It also allows the administrators to access the list of defaulters
+                        and
+                        remind
+                        them of payments through automatic messages and emails. </p>
+                </div>
+                <div class="box">
+                    <h2>3 | Tracking Of Attendance</h2>
+                    <p>All the student records are generated and continuously tracked by the warden for the hostel
+                        students who
+                        check in out several times. Parents receive regular updates about their children's admittance,
+                        attendance, room availability, etc. via automatic SMS or alerts.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+</body>
+
+</html>
